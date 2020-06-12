@@ -27,9 +27,6 @@
         flex-grow:1 ;
         overflow: auto;
     }
-    .nav{
-        border-top: 1px solid;
 
-    }
 
 </style>
