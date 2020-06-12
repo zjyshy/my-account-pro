@@ -6,6 +6,7 @@ import Labels from "@/views/Labels.vue";
 import AddBill from "@/views/AddBill.vue";
 import Set from "@/views/Set.vue";
 import Statistics from "@/views/Statistics.vue";
+import NotFound from "@/views/NotFound.vue";
 
 Vue.use(VueRouter);
 
@@ -35,6 +36,10 @@ const routes = [
   {
     path: '/statistics',
     component: Statistics
+  },
+  {
+    path: '*',
+    component: NotFound
   }
 
 ];

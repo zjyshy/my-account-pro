@@ -1,7 +1,7 @@
 <template>
-    <div>Labels
-        <Nav/>
-    </div>
+    <layout>
+        <div>lab</div>
+    </layout>
 
 </template>
 

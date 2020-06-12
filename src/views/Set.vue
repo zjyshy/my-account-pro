@@ -1,7 +1,7 @@
 <template>
-    <div>set
-        <Nav/>
-    </div>
+    <layout>
+        <div>set</div>
+    </layout>
 
 
 </template>

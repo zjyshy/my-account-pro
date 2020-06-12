@@ -1,8 +1,9 @@
 <template>
-    <div>addBill
-        <Nav/>
-
-    </div>
+    <layout>
+        <div>
+            add
+            </div>
+    </layout>
 
 
 </template>

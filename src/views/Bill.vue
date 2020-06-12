@@ -1,14 +1,18 @@
 <template>
-    <div>123bill
-        <Nav/>
-    </div>
+
+    <layout>
+        <div>bill</div>
+    </layout>
+
 
 
 </template>
 
 <script lang="ts">
+
   export default {
-    name: "Bill"
+    name: "Bill",
+
   };
 </script>
 
