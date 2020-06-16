@@ -3,8 +3,10 @@
     <div>
       <header>
         <div>
-          <div>收入</div>
-          <div>支出</div>
+          <div :class="type==='1' && 'selected'"
+          @click="selectType('1')">收入</div>
+          <div :class="type==='0'  && 'selected'"
+          @click="selectType('0')">支出</div>
         </div>
       </header>
 <Money/>
@@ -16,7 +18,7 @@
 
 </template>
 
-<script lang="ts">
+<script >
 
   import NumberPad from "@/components/AddBill/NumberPad.vue";
   import Money from "@/components/AddBill/Money.vue";
@@ -25,9 +27,20 @@
     components: {Money, NumberPad},
     data: function () {
       return {
-        billType: '收入'
+        //billType: '收入',
+        type:'0'//0表示支出，1表示收入
       };
     },
+    methods:{
+      selectType(type){
+        if(type !=='0'&& type!=='1'){
+          throw new Error('type is unknown')
+        }else{
+          this.type = type;
+          console.log(type)
+        }
+    }
+  },
 
   };
 </script>
@@ -50,18 +63,22 @@
         border: 1px solid #42b983;
         padding: 3px 20px;
         font-weight: 600;
+        color: #42b983;
       }
 
       > div:first-child {
         border-radius: 5px 0 0 5px;
-        background-color: #42b983;
-        color: white;
+
       }
 
       > div:last-child {
-        color: #42b983;
+
         border-radius: 0 5px 5px 0;
       }
+    }
+    .selected{
+      background-color: #42b983;
+      color: white;
     }
   }
 

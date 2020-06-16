@@ -2,13 +2,13 @@
 
   <main>
     <div class="money">
-      <span class="bill-type">{{billType}}</span>金额
+      <span class="bill-type"></span>金额
       <div class="inputMoney"><span>￥</span>
         <label><input type="text" placeholder="填写金额"></label>
         <span id="empty-icon"><Icon icon-name="empty"/></span>
       </div>
     </div>
-    <div class="date">{{billType}}日期 <span class="date-selector">2020-6-12</span></div>
+    <div class="date">日期 <span class="date-selector">2020-6-12</span></div>
     <div class="mark"><label>备注<input type="text" placeholder="填写备注"></label></div>
     <div class="save">
       <button>保存</button>
@@ -79,6 +79,7 @@
 
       }
     }
+
 
   }
 
