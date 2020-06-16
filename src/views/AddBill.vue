@@ -156,6 +156,9 @@
 
   footer {
     .numberBorder {
+      position: absolute;
+      width: 100%;
+      bottom: 65px;
       display: flex;
       padding: 0 5px;
       background-color: #dddddd;
@@ -170,7 +173,7 @@
         > button {
           width: 31%;
           height: 50px;
-          margin: 3px;
+          margin: 2.5px;
           justify-content: space-between;
           border-radius: 5px;
           text-align: center;
