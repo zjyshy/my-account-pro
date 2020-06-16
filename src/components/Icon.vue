@@ -1,9 +1,9 @@
 <template>
-    <div class="wrapper">
+    <span class="wrapper-icon">
         <svg class="ic">
             <use :xlink:href="'#'+iconName"></use>
         </svg>
-    </div>
+    </span>
 </template>
 
 <script lang="ts">
@@ -19,16 +19,20 @@
   };
 </script>
 
-<style lang="scss" scoped>
-    .wrapper{
+<style lang="scss" >
+    .wrapper-icon{
         text-align: center;
         .ic {
-            width: 3em;
-            opacity: 0.5;
-            height: 30px;
+            width: 2em; height: 2em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
 
 
         }
+    }
+    #empty-icon .ic{
+        font-size: 1.2rem;
     }
 
 
